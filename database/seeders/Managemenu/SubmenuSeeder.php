@@ -72,9 +72,9 @@ class SubmenuSeeder extends Seeder
         'menu_id' => 5,
         'ssm' => 3,
         'name' => 'change password',
-        'route' => '/change/password',
-        'active' => 'change/password',
-        'routename' => '/change/password',
+        'route' => '/password',
+        'active' => 'password',
+        'routename' => '/password',
         'description' => 'submenu user change password'
       ],
 
@@ -82,27 +82,27 @@ class SubmenuSeeder extends Seeder
         'menu_id' => 6,
         'ssm' => 1,
         'name' => 'menu',
-        'route' => '/ma-menu',
-        'active' => 'ma-menu',
-        'routename' => '/ma-menu',
+        'route' => '/menu',
+        'active' => 'menu',
+        'routename' => '/menu',
         'description' => 'submenu access menu'
       ],
       [
         'menu_id' => 6,
         'ssm' => 2,
         'name' => 'submenu',
-        'route' => '/ma-submenu',
-        'active' => 'ma-submenu',
-        'routename' => '/ma-submenu',
+        'route' => '/submenu',
+        'active' => 'submenu',
+        'routename' => '/submenu',
         'description' => 'submenu access submenu'
       ],
       [
         'menu_id' => 6,
         'ssm' => 3,
         'name' => 'permission',
-        'route' => '/ma-permission',
-        'active' => 'ma-permission',
-        'routename' => '/ma-permission',
+        'route' => '/permission',
+        'active' => 'permission',
+        'routename' => '/permission',
         'description' => 'submenu access permission'
       ],
 

@@ -36,12 +36,12 @@ class RoleHasPermissionSeeder extends Seeder
         'profile',
         'profile.edit',
         'profile.update',
-        'change.password',
-        'change.password.update',
+        'password',
+        'password.update',
 
-        'ma-menu',
-        'ma-submenu',
-        'ma-permission',
+        'menu',
+        'submenu',
+        'permission',
 
         'menus.index',
         'menus.create',
@@ -95,12 +95,12 @@ class RoleHasPermissionSeeder extends Seeder
         'profile',
         'profile.edit',
         'profile.update',
-        'change.password',
-        'change.password.update',
+        'password.edit',
+        'password.update',
 
-        'ma-menu',
-        'ma-submenu',
-        'ma-permission',
+        'menu',
+        'submenu',
+        'permission',
 
         'menus.index',
         'menus.create',
@@ -147,16 +147,16 @@ class RoleHasPermissionSeeder extends Seeder
         'profile',
         'profile.edit',
         'profile.update',
-        'change.password',
-        'change.password.update',
+        'password',
+        'password.update',
       ],
 
       'member' => [
         'profile',
         'profile.edit',
         'profile.update',
-        'change.password',
-        'change.password.update',
+        'password',
+        'password.update',
       ],
     ];
 

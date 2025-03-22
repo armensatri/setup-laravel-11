@@ -161,9 +161,11 @@ Route::group(
     Route::put('/profile/update', [EditprofileController::class, 'update'])
       ->name('profile.update');
 
-    Route::get('/change/password', [ChangepasswordController::class, 'edit'])
-      ->name('change.password');
-    Route::patch('/change/password', [ChangepasswordController::class, 'update'])->name('change.password.update');
+    // Route untuk menampilkan form change password
+    Route::get('/password', [ChangepasswordController::class, 'index'])->name('password');
+
+    // Route untuk memproses update password
+    Route::patch('/password/update', [ChangepasswordController::class, 'update'])->name('password.update');
   }
 );
 
@@ -203,14 +205,14 @@ Route::group(
 Route::group(
   ['middleware' => ['auth', 'permission']],
   function () {
-    Route::get('/ma-menu', [MenuController::class, 'index'])
-      ->name('ma-menu');
+    Route::get('/menu', [MenuController::class, 'index'])
+      ->name('menu');
 
-    Route::get('/ma-submenu', [SubmenuController::class, 'index'])
-      ->name('ma-submenu');
+    Route::get('/submenu', [SubmenuController::class, 'index'])
+      ->name('submenu');
 
-    Route::get('/ma-permission', [PermissionController::class, 'index'])
-      ->name('ma-permission');
+    Route::get('/permission', [PermissionController::class, 'index'])
+      ->name('permission');
   }
 );
 

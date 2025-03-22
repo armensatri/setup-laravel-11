@@ -60,6 +60,11 @@ class User extends Authenticatable
       ];
   }
 
+  public function hasPermission($permission)
+  {
+    return $this->role?->permissions->contains('name', $permission);
+  }
+
   public function scopeSearch(Builder $query, array $fillters): void
   {
     $fields = ['name'];
