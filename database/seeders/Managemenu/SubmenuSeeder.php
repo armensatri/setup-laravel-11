@@ -68,15 +68,6 @@ class SubmenuSeeder extends Seeder
         'routename' => '/profile/edit',
         'description' => 'submenu user edit profile'
       ],
-      [
-        'menu_id' => 5,
-        'ssm' => 3,
-        'name' => 'change password',
-        'route' => '/password',
-        'active' => 'password',
-        'routename' => '/password',
-        'description' => 'submenu user change password'
-      ],
 
       [
         'menu_id' => 6,

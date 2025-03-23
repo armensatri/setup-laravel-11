@@ -52,7 +52,7 @@ use App\Http\Controllers\Backend\Manageaccess\{
 |---------------------------------------------------------------*/
 
 Route::group(
-  ['middleware' => ['guest']],
+  ['middleware' => ['guest', 'limit.user']],
   function () {
     Route::controller(LoginController::class)->group(
       function () {
@@ -162,7 +162,7 @@ Route::group(
       ->name('profile.update');
 
     // Route untuk menampilkan form change password
-    Route::get('/password', [ChangepasswordController::class, 'index'])->name('password');
+    Route::get('/change', [ChangepasswordController::class, 'index'])->name('change');
 
     // Route untuk memproses update password
     Route::patch('/password/update', [ChangepasswordController::class, 'update'])->name('password.update');

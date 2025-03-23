@@ -17,7 +17,7 @@ class ChangepasswordController extends Controller
     Submenuaccess::Submenu();
   }
 
-  public function edit()
+  public function index()
   {
     return view('backend.account.change-password', [
       'title' => 'Change password'

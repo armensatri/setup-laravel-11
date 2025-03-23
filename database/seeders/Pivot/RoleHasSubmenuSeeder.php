@@ -20,7 +20,6 @@ class RoleHasSubmenuSeeder extends Seeder
     $submenus = Submenu::whereIn('name', [
       'profile',
       'edit profile',
-      'change password',
 
       'menu',
       'submenu',
@@ -40,7 +39,6 @@ class RoleHasSubmenuSeeder extends Seeder
       'owner' => [
         'profile',
         'edit profile',
-        'change password',
 
         'menu',
         'submenu',
@@ -59,7 +57,6 @@ class RoleHasSubmenuSeeder extends Seeder
       'superadmin' => [
         'profile',
         'edit profile',
-        'change password',
 
         'menu',
         'submenu',
@@ -78,13 +75,11 @@ class RoleHasSubmenuSeeder extends Seeder
       'admin' => [
         'profile',
         'edit profile',
-        'change password',
       ],
 
       'member' => [
         'profile',
         'edit profile',
-        'change password',
       ],
     ];
 

@@ -36,8 +36,6 @@ class RoleHasPermissionSeeder extends Seeder
         'profile',
         'profile.edit',
         'profile.update',
-        'password',
-        'password.update',
 
         'menu',
         'submenu',
@@ -147,16 +145,12 @@ class RoleHasPermissionSeeder extends Seeder
         'profile',
         'profile.edit',
         'profile.update',
-        'password',
-        'password.update',
       ],
 
       'member' => [
         'profile',
         'profile.edit',
         'profile.update',
-        'password',
-        'password.update',
       ],
     ];
 
