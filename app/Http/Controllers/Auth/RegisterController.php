@@ -20,6 +20,17 @@ class RegisterController extends Controller
 
   public function store(RegisterSr $request)
   {
+    $userCount = User::count();
+
+    if ($userCount >= 5) {
+      Alert::warning(
+        'warning',
+        'Registrasi pendaftaran! masih tertutup.'
+      );
+
+      return redirect()->route('register');
+    }
+
     $datastore = $request->validated();
 
     $role = Role::where('id', 4)->first();

@@ -6,6 +6,10 @@
       {{ $title }}
     </div>
 
+    @if (session()->has('alert'))
+      @include('sweetalert::alert')
+    @endif
+
     <form action="{{ route('register.store') }}"
       method="POST"
       class="p-3 space-y-4">

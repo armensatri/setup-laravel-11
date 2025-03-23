@@ -52,7 +52,7 @@ use App\Http\Controllers\Backend\Manageaccess\{
 |---------------------------------------------------------------*/
 
 Route::group(
-  ['middleware' => ['guest', 'limit.user']],
+  ['middleware' => ['guest']],
   function () {
     Route::controller(LoginController::class)->group(
       function () {
